@@ -22,3 +22,7 @@ const b1 = {
 };
 
 console.log(a1, a111, b1);
+
+/**
+ * bs
+ */
