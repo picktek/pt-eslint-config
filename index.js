@@ -58,5 +58,7 @@ module.exports = {
     'jsdoc/require-param-description':   0,
     'jsdoc/require-returns-description': 0,
     'jsdoc/require-returns-type':        0,
+    'jsdoc/implements-on-classes':       0,
+    'jsdoc/require-jsdoc':               0,
   },
 };
