@@ -26,3 +26,8 @@ console.log(a1, a111, b1);
 /**
  * bs
  */
+
+const ffs  = undefined;
+const ffs1 = null;
+
+console.log(ffs, ffs1);
