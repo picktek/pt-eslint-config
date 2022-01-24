@@ -1,6 +1,6 @@
 module.exports = {
-  root:          true,
-  extends:       [
+  root:    true,
+  extends: [
     'eslint',
     'plugin:lodash/recommended',
     'plugin:unicorn/all',
@@ -8,7 +8,7 @@ module.exports = {
     'plugin:import/recommended',
     '@remix-run/eslint-config',
   ],
-  env:           {
+  env: {
     es6:                         true,
     'react-native/react-native': true,
   },
@@ -19,38 +19,41 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins:       [
+  plugins: [
     'react',
     'react-native',
     'lodash',
     'align-assignments',
     'only-error',
   ],
-  rules:         {
+  rules: {
     'node/no-unsupported-features/es-syntax': 0,
     'key-spacing':                            ['error', {
-      'align': {
-        'on': 'value',
+      align: {
+        on: 'value',
       },
     }],
-    'no-console':                             0,
-    'unicorn/template-indent':                [
+    'no-console':              0,
+    'unicorn/template-indent': [
       'error', {
         indent: 2,
       },
     ],
-    'align-assignments/align-assignments':    [2, { 'requiresOnly': false }],
-    'no-multi-spaces':                        0,
-    'sort-imports':                           ['error', {
-      'ignoreCase':            true,
-      'ignoreDeclarationSort': false,
-      'ignoreMemberSort':      false,
-      'memberSyntaxSortOrder': ['none', 'single', 'multiple', 'all'],
-      'allowSeparatedGroups':  true,
+    'align-assignments/align-assignments': [2, { requiresOnly: false }],
+    'no-multi-spaces':                     0,
+    'sort-imports':                        ['error', {
+      ignoreCase:            true,
+      ignoreDeclarationSort: false,
+      ignoreMemberSort:      false,
+      memberSyntaxSortOrder: ['none', 'single', 'multiple', 'all'],
+      allowSeparatedGroups:  true,
     }],
-    'quotes':                                 ['error', 'single', { 'allowTemplateLiterals': true }],
-    'indent':                                 ['error', 2],
-    'comma-dangle':                           0,
+    quotes:                          ['error', 'single', { allowTemplateLiterals: true }],
+    indent:                          ['error', 2],
+    'comma-dangle':                  0,
+    'unicorn/prevent-abbreviations': 0,
+    'lodash/prefer-lodash-method':   0,
+    'func-style':                    0,
+    'lodash/prefer-constant':        0
   },
 };
-
