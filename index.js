@@ -60,5 +60,6 @@ module.exports = {
     'jsdoc/require-returns-type':        0,
     'jsdoc/implements-on-classes':       0,
     'jsdoc/require-jsdoc':               0,
+    'unicorn/no-null':                   0,
   },
 };
